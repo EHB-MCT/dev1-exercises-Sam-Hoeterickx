@@ -1,14 +1,13 @@
 "use strict";
 
-
-  drawLine();
-
-function drawLine(){
-    let canvas = document.querySelector("canvas");
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    let context = canvas.getContext("2d");
-
+sayHelloMultimedia();
+function sayHelloMultimedia(){
+  alert("Hello");
+  alert("Multimedia");
+}
+  drawRectangular();
+  
+  function drawRectangular(){
     //This code draws a rectangle with a red fill and an outline
     context.fillStyle = "red";
     context.lineWidth = 1,5; 
@@ -28,8 +27,7 @@ function drawLine(){
     context.fillStyle = "green";
     context.ellipse(300,300,100,50,Math.PI/4,0,Math.PI*2);
     context.fill()
- 
-}
+  }
 
 window.onresize = drawOrange;
 
@@ -45,4 +43,7 @@ function drawOrange(){
     context.arc(100,100,50,0,Math.PI*2);
     context.fill();
 
+    
 }
+
+
