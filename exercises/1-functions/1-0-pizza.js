@@ -27,6 +27,8 @@ function sayHelloMultimedia(){
     context.fillStyle = "green";
     context.ellipse(300,300,100,50,Math.PI/4,0,Math.PI*2);
     context.fill()
+    
+    context.stroke();
   }
 
 window.onresize = drawOrange;
@@ -42,7 +44,7 @@ function drawOrange(){
     context.fillStyle = "red";
     context.arc(100,100,50,0,Math.PI*2);
     context.fill();
-
+    context.stroke();
     
 }
 
