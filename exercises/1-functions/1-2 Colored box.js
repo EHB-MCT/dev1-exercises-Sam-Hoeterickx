@@ -8,7 +8,7 @@ drawLine_vierkant();
 
 
 function setup(){
-    let canvas= document.querySelector("canvas");
+    let canvas = document.querySelector("canvas");
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     context = canvas.getContext("2d");
