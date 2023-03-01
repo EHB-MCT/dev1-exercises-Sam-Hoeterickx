@@ -35,7 +35,6 @@ function drawRectangular_2_1(){
     context.beginPath();
     context.rect(50,50,300,300);
     context.fill();
-    context.stroke();
 }
 
 function drawRectangular_2_2(){
