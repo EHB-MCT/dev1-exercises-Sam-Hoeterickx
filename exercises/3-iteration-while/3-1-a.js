@@ -9,7 +9,7 @@ function draw() {
     context.lineWidth = 2;
     context.fillStyle = "#3498DB";
     context.fillRect(50, 50, 300, 300);
-    context.strokeStyle = "white";
+    context.strokeStyle = "black";
     drawLines();
     
 }
