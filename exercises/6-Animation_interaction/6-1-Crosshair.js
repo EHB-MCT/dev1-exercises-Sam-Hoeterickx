@@ -24,10 +24,10 @@ function move(eventData){
     context.fillRect(0,0,width,height);
 
     context.fillStyle = "red";
-    Utils.crossH(x,y,width+5000,y)      // horizontaal rechts
-    Utils.crossH(x,y,width-5000,y)      // horizontaal links
-    Utils.crossH(x,y,x,height+5000)     //verticaal onder
-    Utils.crossH(x,y,x,height-5000)     // verticaal boven
+    Utils.crossH(x,y,context.canvas.width,y)      // horizontaal rechts
+    Utils.crossH(x,y,- context.canvas.width,y)      // horizontaal links
+    Utils.crossH(x,y,x,context.canvas.height)     //verticaal onder
+    Utils.crossH(x,y,x,-context.canvas.height)     // verticaal boven 
 
    /*  Utils.fillCircle(x,y,25); // moet crosshair worden */
 }
